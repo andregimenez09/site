@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+/*importação de font (google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/***** bleakpointes ******/
+
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -9,48 +11,96 @@
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 /*Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 576px) {
-    body {
-        background-color: #00ff00;
-    }
+@media (min-width: 576px) {} 
+/* Cabeçario */
+  #logo img {
+    margin: 10px 0px 0px 0px;
+
+  }
+
+
+
+/*CSS Reset '(compatibilizarcom todos navegadores)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-
-
-    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-    /* Tablet Portait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 768px) {
-    body {
-        background-color: #ffff00;
-
-    }
+/* layout */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    /*1em = 100% (tamanho padrão)*/
 }
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.container {
+    margin: 0 auto; /* centralizar o bloco */
 
-    /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-    @media (min-width: 992px) {
-        body {
-            background-color: #00ffff;
-        
-        }
-    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+}
+/* smart Phone >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Cabeçario */
+header {
+    height: 100px;
+    background-color:rgb(247, 0, 255);
+}
 
-    /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#logo img {
+    width: 92px;
+    height: 92px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* Tablet Portait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 768px) {}
+/* cabeçario */
+ .container {
+    max-width: 720px;
+    background-color: #0f0;
 
-    /* Pcs / Notbooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+    
 
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    
 
-    /* Telas Fullhd / 4k / Smarttv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-    @media (min-width: 576px) {
-        body {
-            background-color: #4b0082;
-        color: floralwhite;
-        }
 
-    }
-    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+} 
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 992px) {}
+/* cabeçario */
+ .container {
+ max-width: 960;
+ background-color: #ffa500;
+ }
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Pcs / Notbooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.container {}
+header {
+    max-width: 1140px;
+    background-color: #ff3c00;
+
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Telas Fullhd / 4k / Smarttv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 576px) {}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
